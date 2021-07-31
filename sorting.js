@@ -81,11 +81,11 @@ function disableButton(buttonId, status) {
             if (status) {
                 button[i].disabled = true;
                 document.getElementById("myRange").disabled = true;
-                document.getElementById("responsiveRange").disabled = true;
+                document.getElementById("ResponsiveRange").disabled = true;
             } else {
                 button[i].disabled = false;
                 document.getElementById("myRange").disabled = false;
-                document.getElementById("responsiveRange").disabled = false;
+                document.getElementById("ResponsiveRange").disabled = false;
             }
         }
     }
