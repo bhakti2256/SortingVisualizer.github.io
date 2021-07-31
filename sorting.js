@@ -52,7 +52,7 @@ function generateNewArray(arraySize, width) {
         elem.appendChild(bars);
         bars.style.height = ` ${array[i]}px `;
         bars.style.width = ` ${width}px `;
-        if (arraySize <= 25) {
+        if (arraySize <= 20) {
             bars.style.color = "white";
             bars.innerHTML = `${array[i]}`
         }
@@ -65,7 +65,7 @@ function generateArray() {
     for (let i = 0; i < array.length; i++) {
         array[i] = Math.floor(Math.random() * (max - min) + min);
         let elem = document.getElementById(`${i}`);
-        if (array.length <= 25) {
+        if (array.length <= 20) {
             elem.style.color = "white";
             elem.innerHTML = `${array[i]}`
         }
