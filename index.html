@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./sorting.js"></script>
+</head>
+
+<body onload="generateNewArray(50, 15)">
+    <header>
+        <h1>Sorting Visualizer</h1>
+    </header>
+    <div class="button-list">
+        <ul>
+            <li>
+                <button class="" id="generate" onclick="generateArray()">Generate new Array</button>
+            </li>
+            <!-- Responsive Design -->
+            <li class="sortingAlgorithms">
+                <label for="sortingAlgo" style="color: white; font-weight: bold;">Select algorithm</label>
+                <select name="sortingAlgo" id="selectAlgo" oninput="selectAlgo()">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="merge">Merge Sort</option>
+                    
+                </select>
+            </li>
+
+            <!-- Range Slider -->
+            <li id="range">
+                <label for="" style="color: white; font-weight: bold;">Size</label>
+                <span><input type="range" min="20" max="100" value="50" class="slider" id="myRange"
+                    oninput="slider()"></span>
+            </li>
+            <li id="responsiveRange">
+                <label for="" style="color: white; font-weight: bold;">Size</label>
+                <span><input type="range" min="10" max="60" value="30" class="slider" id="ResponsiveRange"
+                    oninput="ResponsiveSlider()"></span>
+            </li>
+                
+                <!-- Speed Slider -->
+            <li>
+                <label for="" style="color: white; font-weight: bold;">Speed</label>
+                <span><input type="range" min="0.1" max="50" value="20" class="slider" id="speedSlider"
+                        oninput="changeSpeed()"></span>
+            </li>
+
+            <!-- Sorting Algorithms -->
+            <li>
+                <button type="button" class="button" id="bubble" onclick="bubbleSort()">Bubble Sort</button>
+            </li>
+            <li>
+                <button type="button" class="button" id="selection" onclick="selectionSort()">Selection Sort</button>
+            </li>
+            <li>
+                <button type="button" class="button" id="insertion" onclick="insertionSort()">Insertion Sort</button>
+            </li>
+            <li>
+                <button type="button" class="button" id="quick" onclick="quickSort()">Quick Sort</button>
+            </li>
+            <li>
+                <button type="button" class="button" id="merge" onclick="mergeSort()">Merge Sort</button>
+            </li>
+        </ul>
+    </div>
+    <section>
+        <div class="bar-container" id="bar-components">
+
+        </div>
+    </section>
+</body>
+
+</html>
