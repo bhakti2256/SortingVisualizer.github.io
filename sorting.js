@@ -81,9 +81,11 @@ function disableButton(buttonId, status) {
             if (status) {
                 button[i].disabled = true;
                 document.getElementById("myRange").disabled = true;
+                document.getElementById("speedSlider").disabled = true;
             } else {
                 button[i].disabled = false;
                 document.getElementById("myRange").disabled = false;
+                document.getElementById("speedSlider").disabled = false;
             }
         }
     }
