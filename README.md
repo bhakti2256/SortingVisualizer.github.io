@@ -8,3 +8,4 @@ Also for better user experience, I have created sliders for changing array size 
 For understanding: less speed + less array size.
 For visual experience: more speed + more array size.
 
+Link: https://bhakti2256.github.io/SortingVisualizer.github.io/
